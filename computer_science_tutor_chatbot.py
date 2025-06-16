@@ -10,7 +10,7 @@ import streamlit as st
 
 import os
 
-os.environ["GOOGLE_API_KEY"] = "YOUR_API_KEY"
+api_key = os.getenv("GOOGLE_API_KEY")
 
 #gemini_model = ChatGoogleGenerativeAI(model="gemini-1.5-flash", convert_system_message_to_human=True)
 st.set_page_config(page_title="AI Assistant")
